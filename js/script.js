@@ -28,3 +28,27 @@
 
 // DOCUMENT READY FUNCTION
 
+
+
+
+var userChoice= "";
+
+var computerChoice=["Rock","Paper","Scissors"];
+
+var winner="";
+
+var choices=["Rock","Paper","Scissors"];
+
+var x = Math.floor(Math.random()*computerChoice.length);
+
+console.log(computerChoice[x]);
+
+$(document).ready(function() {
+        $(".shoot").click(function(){
+                var message = $("#input").val();
+                
+                $(".userschoice").html(message)
+        });
+        
+        
+});
